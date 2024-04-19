@@ -1,0 +1,114 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Command Menu</title>
+<style>
+    /* Styles for the popup */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #add8e6; /* Baby blue background color */
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .popup {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        z-index: 9999; /* Ensure popup is on top of other elements */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .popup:hover {
+        transform: scale(1.02);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .command {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    .command:hover {
+        transform: scale(1.03);
+        background-color: #e6e6e6;
+    }
+    .command p {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+ 
+<div class="popup">
+    <h2>Custom Command Menu:</h2>
+    <div class="command" id="powerpoint">
+        <p>Ctrl + Alt + Shift + P - Open PowerPoint</p>
+    </div>
+    <div class="command" id="word">
+        <p>Ctrl + Alt + Shift + W - Open Word</p>
+    </div>
+    <div class="command" id="excel">
+        <p>Ctrl + Alt + Shift + X - Open Excel</p>
+    </div>
+</div>
+ 
+<script>
+    document.querySelectorAll('.command').forEach(function(command) {
+        command.addEventListener('click', function() {
+            var appId = this.id;
+            openFile(appId);
+        });
+    });
+ 
+    function openFile(appId) {
+        var filePath;
+        switch (appId) {
+            case 'powerpoint':
+                filePath = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\PowerPoint.lnk';//change
+                break;
+            case 'word':
+                filePath = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Word.lnk';//change
+                break;
+            case 'excel':
+                filePath = 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Excel.lnk';//change
+                break;
+            default:
+                return; // Do nothing if app ID is unknown
+        }
+ 
+        // Send a POST request to the server with the file path
+        fetch('http://localhost:8000', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                file_path: filePath
+            })
+        }).then(response => {
+            if (response.ok) {
+                console.log('File opened successfully');
+            } else {
+                console.error('Failed to open file');
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+ 
+</body>
+</html>
