@@ -70,7 +70,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             if (ctypes.windll.user32.GetAsyncKeyState(VK_CONTROL) & 0x8000) \
                 and (ctypes.windll.user32.GetAsyncKeyState(VK_SHIFT) & 0x8000) \
                 and (ctypes.windll.user32.GetAsyncKeyState(VK_F1) & 0x8000):
-                cls.display_help_menu()
+                cls.open_application(r'')#change to popup.html dir
  
             elif (ctypes.windll.user32.GetAsyncKeyState(VK_CONTROL) & 0x8000) \
                 and (ctypes.windll.user32.GetAsyncKeyState(VK_SHIFT) & 0x8000) \
