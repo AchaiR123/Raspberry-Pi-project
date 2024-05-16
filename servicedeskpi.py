@@ -1,3 +1,4 @@
+# Simple service desk program for the Raspberry PI
 welcome = "How can we assist you today?"   
 found = ""
 print("Welcome to the service desk\n\n\t")
