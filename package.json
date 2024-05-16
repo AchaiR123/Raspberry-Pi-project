@@ -1,0 +1,36 @@
+{
+  "name": "raspberry-pi-office",
+  "version": "0.0.2",
+  "description": "The Raspberry PI with a modified OS to become an affordable, modern, exquisite work computer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AchaiR123/Raspberry-Pi-project.git"
+  },
+  "keywords": [
+    "PI",
+    "Raspberry",
+    "PI",
+    "work",
+    "office",
+    "network",
+    "OS",
+    "project",
+    "affordable",
+    "modern",
+    "exquisite"
+  ],
+  "author": "AchaiR, themysterousman",
+  "license": "SEE LICENSE IN EULA.txt",
+  "bugs": {
+    "url": "https://github.com/AchaiR123/Raspberry-Pi-project/issues"
+  },
+  "homepage": "https://github.com/AchaiR123/Raspberry-Pi-project#readme",
+  "devDependencies": {
+    "electron": "^30.0.6"
+  }
+}

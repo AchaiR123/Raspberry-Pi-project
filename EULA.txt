@@ -1,0 +1,54 @@
+Raspberry PI Office End-User License Agreement (EULA)
+
+This End-User License Agreement ("Agreement") is a legal agreement between the user ("User") and the owners of Raspberry PI Office, AchaiR and themysterousman ("Licensor"), for the software product Raspberry PI Office ("Software"). By downloading, purchasing, or otherwise using the Software, the User agrees to be bound by the terms of this Agreement.
+
+1. License Grant
+
+a. The Licensor grants the User a non-exclusive, non-transferable license to use the Software for commercial purposes on a single designated computer. The Software is intended to serve as an affordable, modern work computer, with a modified OS tailored for efficient office use.
+
+b. The Software may only be downloaded or purchased by registered companies for their employees' work purposes. Users are permitted to use the Software but are prohibited from copying, modifying, or distributing it in any way. Any commercial use of the Software by the company requires explicit permission from the authors, AchaiR and themysterousman.
+
+2. Restrictions
+
+The User shall not:
+
+Copy, modify, or distribute the Software.
+Use the Software for any purpose other than commercial work.
+Use the Software on more than one designated computer without obtaining additional licenses.
+3. Payment Terms
+
+a. There is no upfront cost for the Software, but it can be purchased with a debit or credit card if the agreement changes. Payments are due within 5 days of purchase, and access to the Software is granted only after payment has been received. The license is a Subscription License, and the terms may vary based on the subscription plan chosen.
+
+b. Termination of the license may occur if the User fails to comply with the terms of this Agreement. In such cases, the company who purchased or downloaded the Software will be required to pay the same amount as their original purchase if their license is revoked due to non-compliance by their employee.
+
+4. Intellectual Property
+
+All rights, title, and interest in and to the Software, including any updates or modifications, are owned by AchaiR and themysterousman.
+
+5. Warranty Disclaimer
+
+The Software is provided "as is" without warranty of any kind, express or implied. The User accepts full responsibility for any damage resulting from the use of the Software.
+
+6. Limitation of Liability
+
+In no event shall the Licensor be liable for any damages, including but not limited to special, incidental, indirect, or consequential damages, arising out of the use of or inability to use the Software.
+
+7. Governing Law
+
+This Agreement shall be governed by and construed in accordance with the laws of England.
+
+8. Open Source Code Clause
+
+The Software's source code is made available under the MIT License for competition purposes. Users who obtained the code during the competition period are bound by the open-source license terms, even if the code repository is later deleted. The source code repository can be accessed at https://github.com/AchaiR123/Raspberry-Pi-project.
+
+9. Updates to the Agreement
+
+The Licensor reserves the right to update this Agreement at any time. Users will be notified of any significant changes through the software, email, and text. Continued use of the Software following any changes to this Agreement constitutes acceptance of those changes.
+
+10. Contact Information
+
+For any questions or concerns regarding this Agreement, please contact:
+
+Email: charlie.maytham@icloud.com
+WhatsApp (Text Only): +44 7708 635997
+By downloading, purchasing, or using the Software, the User agrees to be bound by the terms of this Agreement. 
