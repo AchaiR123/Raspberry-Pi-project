@@ -1,20 +1,24 @@
-#simple service desk program for help
-found=""
+welcome = "How can we assist you today?"   
+found = ""
 print("Welcome to the service desk\n\n\t")
+
 def loop():
-    print("How can we assist you today?")
+    global welcome  # Declare 'welcome' as global to modify it within the function
+    print(welcome)
     userInput = str(input(""))
     userInput = userInput.lower()
-    if userInput in["navigate", "help","navigating","stuck"]:
-        print("press \033ctrl+shift+f1\033\n\nTo navigate to the help menu")
-        return()
-    elif userInput in["stop"]:
-        break()
+    if userInput in ["navigate", "help", "navigating", "stuck"]:
+        print("Press \033[ctrl+shift+f1\033[0m\n\nTo navigate to the help menu")
+        welcome = "How else can we assist you today?"
+        loop()
+    elif userInput in ["stop"]:
+        print("OK")
     elif userInput in ["overheating", "over heating"]: 
-        print("Your PI")
-        return()
-    elif userInput in ["work","apps","applications","app","application"]:
-        print("Here is the PI OS manual https://www.bing.com/ck/a?!&&p=\
+        print("Don't worry, this issue happened to us! You could:\n\n\t• Put the Pi in an air conditioning unit,\n\n\t• Get a new Pi, or\n\n\t• Replace the overheated parts\n")
+        welcome = "How else can we assist you today?"
+        loop()
+    elif userInput in ["work", "apps", "applications", "app", "application"]:
+        print("Here is the Pi OS manual: https://www.bing.com/ck/a?!&&p=\
               eeac646b829d2ec4Jml\
               tdHM9MTcxNTI5OTIwMCZpZ3VpZD0zNGE1NmMwN\
               C1iY2MwLTZkOTQtMTZjNi03ODc3YmQwYjZjMG\
@@ -23,10 +27,11 @@ def loop():
               0b&psq=pi+os+manua\
               l&u=a1aHR0cHM6Ly93d3cucmFzcGJlcnJ5cGkuY29tL2RvY3V\
               tZW50YXRpb24vcmFzcGJpYW4v&ntb=1")
-        return()
+        welcome = "How else can we assist you today?"
+        loop()
     else:
         print("Sorry,\nWe can't help you!\n\n\nMake sure you spelled it correctly!\n\n\tsay \"stop\" to end the program.\n")
-        return loop()
+        welcome = "How else can we assist you today?"
+        loop()
 
 loop()
-
