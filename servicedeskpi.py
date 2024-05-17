@@ -30,6 +30,18 @@ def loop():
               tZW50YXRpb24vcmFzcGJpYW4v&ntb=1")
         welcome = "How else can we assist you today?"
         loop()
+    elif userInput in ["crashes","crashed","crash","freezes","shit"]
+        print("\n\n\tThis happens alot...     try to buy a new Raspberry PI or check the PI OS manual : https://www.bing.com/ck/a?!&&p=\
+              eeac646b829d2ec4Jml\
+              tdHM9MTcxNTI5OTIwMCZpZ3VpZD0zNGE1NmMwN\
+              C1iY2MwLTZkOTQtMTZjNi03ODc3YmQwYjZjMG\
+              ImaW5zaWQ9NTIwNA&ptn=3&ver=2&h\
+              sh=3&fclid=34a56c04-bcc0-6d94-16c6-7877bd0b6c\
+              0b&psq=pi+os+manua\
+              l&u=a1aHR0cHM6Ly93d3cucmFzcGJlcnJ5cGkuY29tL2RvY3V\
+              tZW50YXRpb24vcmFzcGJpYW4v&ntb=1 ")
+        welcome="How else can we assist you today?"
+        loop()
     else:
         print("Sorry,\nWe can't help you!\n\n\nMake sure you spelled it correctly!\n\n\tsay \"stop\" to end the program.\n")
         welcome = "How else can we assist you today?"
