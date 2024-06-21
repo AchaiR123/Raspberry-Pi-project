@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi Hub</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #b3d9ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f7f7f7;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title {
+            font-size: 2em;
+            color: #333;
+            font-weight: 300;
+        }
+        .tabs {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .tab {
+            width: 20%;
+            height: 300px;
+            background-color: #e6e6e6;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <!-- Placeholder for logo -->
+            </div>
+            <div class="title">Raspberry Pi Hub</div>
+        </div>
+        <div class="tabs">
+            <div class="tab"></div>
+            <div class="tab"></div>
+        </div>
+    </div>
+</body>
+</html>
